@@ -1,0 +1,20 @@
+[gd_scene load_steps=6 format=3 uid="uid://bo32o2hjj4jh5"]
+
+[ext_resource type="PackedScene" uid="uid://dbtae457y2gqp" path="res://desk.tscn" id="1_b0xou"]
+[ext_resource type="Script" path="res://main.gd" id="1_oynvy"]
+[ext_resource type="PackedScene" uid="uid://kkyv5l6cmuat" path="res://player.tscn" id="2_omcm3"]
+[ext_resource type="Script" path="res://player.gd" id="4_7p5ii"]
+[ext_resource type="PackedScene" uid="uid://crn3eb8x1l821" path="res://shelve.tscn" id="5_ho5j4"]
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_oynvy")
+
+[node name="desk" parent="." instance=ExtResource("1_b0xou")]
+position = Vector2(162, 98)
+
+[node name="Player" parent="." instance=ExtResource("2_omcm3")]
+position = Vector2(125, 28)
+script = ExtResource("4_7p5ii")
+
+[node name="Shelve" parent="." instance=ExtResource("5_ho5j4")]
+position = Vector2(413, 101)

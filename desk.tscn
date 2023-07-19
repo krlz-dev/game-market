@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://dbtae457y2gqp"]
+
+[ext_resource type="Texture2D" uid="uid://b1lxgknpjiemx" path="res://desk.svg" id="1_3g7h6"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wungf"]
+
+[node name="desk" type="StaticBody2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_wungf")
+
+[node name="Desk" type="Sprite2D" parent="CollisionShape2D"]
+texture = ExtResource("1_3g7h6")

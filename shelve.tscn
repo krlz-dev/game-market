@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://crn3eb8x1l821"]
+
+[ext_resource type="Texture2D" uid="uid://bm15y3dkdswqn" path="res://shelve.svg" id="1_tbw6l"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7omt5"]
+size = Vector2(102, 46)
+
+[node name="Shelve" type="StaticBody2D"]
+
+[node name="Shelve" type="Sprite2D" parent="."]
+texture = ExtResource("1_tbw6l")
+
+[node name="Shelve2" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_7omt5")
